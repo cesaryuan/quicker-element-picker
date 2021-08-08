@@ -1,4 +1,4 @@
-import { ElementPicker } from "pick-dom-element";
+import { ElementPicker } from "../pick-dom-element/dist/index";
 import { finder } from '@medv/finder'
 window._QResult = {};
 const picker = new ElementPicker();

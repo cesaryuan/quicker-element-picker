@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production --node-env=production",
-    "build:dev": "webpack --mode=development",
+    "build": "cd ./pick-dom-element/ && npm run build && cd .. && webpack --mode=production --node-env=production",
+    "build:dev": "cd ./pick-dom-element/ && npm run build && cd .. && webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch"
   },
@@ -15,7 +15,7 @@
   "dependencies": {
     "@medv/finder": "^2.0.0",
     "lodash": "^4.17.21",
-    "pick-dom-element": "^0.2.0"
+    "pick-dom-element": "file:pick-dom-element"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
